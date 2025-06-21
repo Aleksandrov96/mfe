@@ -4,8 +4,6 @@ on:
     push:
         branches:
             - master
-        paths:
-            - 'packages/container/**'
 
 defaults:
     run:
@@ -13,7 +11,7 @@ defaults:
 
 jobs: 
     build:
-        runs-on: ubuntu-latest
+        runs-on : ubuntu-latest
 
         steps: 
             - uses: actions/checkout@v2
